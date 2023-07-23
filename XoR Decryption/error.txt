@@ -1,0 +1,42 @@
+[steakk@anindita src]$ ./test
+*** Error in `./test': munmap_chunk(): invalid pointer: 0x000000000040140d ***
+======= Backtrace: =========
+/usr/lib/libc.so.6(+0x72055)[0x7fb459021055]
+/usr/lib/libc.so.6(+0x779a6)[0x7fb4590269a6]
+./test[0x401179]
+./test[0x400d6f]
+/usr/lib/libc.so.6(__libc_start_main+0xf0)[0x7fb458fcf610]
+./test[0x400c59]
+======= Memory map: ========
+00400000-00402000 r-xp 00000000 08:03 2884056                            /home/steakk/projects/XoR Decryption/src/test
+00601000-00602000 rw-p 00001000 08:03 2884056                            /home/steakk/projects/XoR Decryption/src/test
+02203000-02235000 rw-p 00000000 00:00 0                                  [heap]
+7fb458faf000-7fb45914a000 r-xp 00000000 08:03 9440386                    /usr/lib/libc-2.22.so
+7fb45914a000-7fb459349000 ---p 0019b000 08:03 9440386                    /usr/lib/libc-2.22.so
+7fb459349000-7fb45934d000 r--p 0019a000 08:03 9440386                    /usr/lib/libc-2.22.so
+7fb45934d000-7fb45934f000 rw-p 0019e000 08:03 9440386                    /usr/lib/libc-2.22.so
+7fb45934f000-7fb459353000 rw-p 00000000 00:00 0
+7fb459353000-7fb459369000 r-xp 00000000 08:03 9440733                    /usr/lib/libgcc_s.so.1
+7fb459369000-7fb459568000 ---p 00016000 08:03 9440733                    /usr/lib/libgcc_s.so.1
+7fb459568000-7fb459569000 rw-p 00015000 08:03 9440733                    /usr/lib/libgcc_s.so.1
+7fb459569000-7fb459666000 r-xp 00000000 08:03 9440436                    /usr/lib/libm-2.22.so
+7fb459666000-7fb459865000 ---p 000fd000 08:03 9440436                    /usr/lib/libm-2.22.so
+7fb459865000-7fb459866000 r--p 000fc000 08:03 9440436                    /usr/lib/libm-2.22.so
+7fb459866000-7fb459867000 rw-p 000fd000 08:03 9440436                    /usr/lib/libm-2.22.so
+7fb459867000-7fb4599d9000 r-xp 00000000 08:03 9440747                    /usr/lib/libstdc++.so.6.0.21
+7fb4599d9000-7fb459bd9000 ---p 00172000 08:03 9440747                    /usr/lib/libstdc++.so.6.0.21
+7fb459bd9000-7fb459be3000 r--p 00172000 08:03 9440747                    /usr/lib/libstdc++.so.6.0.21
+7fb459be3000-7fb459be5000 rw-p 0017c000 08:03 9440747                    /usr/lib/libstdc++.so.6.0.21
+7fb459be5000-7fb459be9000 rw-p 00000000 00:00 0
+7fb459be9000-7fb459c0b000 r-xp 00000000 08:03 9440385                    /usr/lib/ld-2.22.so
+7fb459dc3000-7fb459dc9000 rw-p 00000000 00:00 0
+7fb459e09000-7fb459e0a000 rw-p 00000000 00:00 0
+7fb459e0a000-7fb459e0b000 r--p 00021000 08:03 9440385                    /usr/lib/ld-2.22.so
+7fb459e0b000-7fb459e0c000 rw-p 00022000 08:03 9440385                    /usr/lib/ld-2.22.so
+7fb459e0c000-7fb459e0d000 rw-p 00000000 00:00 0
+7ffd4c556000-7ffd4c577000 rw-p 00000000 00:00 0                          [stack]
+7ffd4c5dd000-7ffd4c5df000 r--p 00000000 00:00 0                          [vvar]
+7ffd4c5df000-7ffd4c5e1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Aborted (core dumped)
+[steakk@anindita src]$

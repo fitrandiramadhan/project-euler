@@ -5,16 +5,17 @@
 #define MaximumPathSum_HPP
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 class MaximumPathSum {
 public:
 	MaximumPathSum();
-	MaximumPathSum()
+	MaximumPathSum(vector<vector<int>> _data);
 
 private:
-	Matrix data;
+	vector<vector<int>> data;
 };
 
 #endif
